@@ -1,7 +1,6 @@
 # Automated-DSA
 Automated Daily DSA Questions 
 
-
 1. List of all DSA questions
 2. List of existing DSA questions
 3. Select the latest question to pick
