@@ -14,7 +14,7 @@ This project helps you track your progress through the NeetCode 150 DSA problems
 ## Project Structure
 
 ```
-neetcode-dsa-tracker/
+Automated-DSA/
 ├── questions/               # Solutions organized by category/difficulty
 ├── questions.csv           # CSV with all questions & tracking info
 ├── src/                    # Source code
@@ -40,31 +40,31 @@ pip install -r requirements.txt
 ### Fetch Questions from NeetCode
 
 ```bash
-python -m neetcode-dsa-tracker.src.main --fetch
+python -m src.main --fetch
 ```
 
 ### Get a New Question to Solve
 
 ```bash
-python -m neetcode-dsa-tracker.src.main --new
+python -m src.main --new
 ```
 
 Optionally filter by category or difficulty:
 
 ```bash
-python -m neetcode-dsa-tracker.src.main --new --category "Arrays & Hashing" --difficulty Easy
+python -m src.main --new --category "Arrays & Hashing" --difficulty Easy
 ```
 
 ### Test a Solution
 
 ```bash
-python -m neetcode-dsa-tracker.src.main --test path/to/solution.py
+python -m src.main --test path/to/solution.py
 ```
 
 ### Commit and Push Changes to Git
 
 ```bash
-python -m neetcode-dsa-tracker.src.main --commit
+python -m src.main --commit
 ```
 
 ## Workflow
