@@ -1,0 +1,30 @@
+import requests
+from bs4 import BeautifulSoup
+import csv
+import os
+
+def fetch_neetcode_questions():
+    url = "https://neetcode.io/practice?tab=neetcode150"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    questions = []
+    for question in soup.find_all('div', class_='question'):
+        title = question.find('h3').text.strip()
+        difficulty = question.find('span', class_='difficulty').text.strip()
+        questions.append({'title': title, 'difficulty': difficulty})
+
+    return questions
+
+def save_questions_to_csv(questions, csv_file_path):
+    file_exists = os.path.isfile(csv_file_path)
+    with open(csv_file_path, mode='a', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=['title', 'difficulty'])
+        if not file_exists:
+            writer.writeheader()
+        writer.writerows(questions)
+
+if __name__ == "__main__":
+    questions = fetch_neetcode_questions()
+    csv_file_path = os.path.join(os.path.dirname(__file__), '../../questions/questions.csv')
+    save_questions_to_csv(questions, csv_file_path)

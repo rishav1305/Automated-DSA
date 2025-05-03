@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en" class="dark-theme"><head>
+    <meta charset="utf-8">
+    <title>NeetCode</title>
+    <meta name="description" content="A better way to prepare for coding interviews.">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js',
+      );
+      fbq('init', '614038070870028');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=614038070870028&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Import Featurebase SDK -->
+    <script>
+      !(function (e, t) {
+        const a = 'featurebase-sdk';
+        function n() {
+          if (!t.getElementById(a)) {
+            var e = t.createElement('script');
+            (e.id = a),
+              (e.src = 'https://do.featurebase.app/js/sdk.js'),
+              t
+                .getElementsByTagName('script')[0]
+                .parentNode.insertBefore(
+                  e,
+                  t.getElementsByTagName('script')[0],
+                );
+          }
+        }
+        'function' != typeof e.Featurebase &&
+          (e.Featurebase = function () {
+            (e.Featurebase.q = e.Featurebase.q || []).push(arguments);
+          }),
+          'complete' === t.readyState || 'interactive' === t.readyState
+            ? n()
+            : t.addEventListener('DOMContentLoaded', n);
+      })(window, document);
+    </script>
+
+    <!-- Carbon -->
+    <script src="//m.servedby-buysellads.com/monetization.custom.js" type="text/javascript"></script>
+  <style>@charset "UTF-8";html,body{margin:0;padding:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}html{background-color:#fff;font-size:16px;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;min-width:300px;overflow-x:hidden;overflow-y:scroll;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif}body{color:#4a4a4a;font-size:1em;font-weight:400;line-height:1.5}:root{--body-background:#e9eef3;--body-background-2:#bdcfe2;--graph-background:#bdcfe2;--navbar-background:white;--menu-card-background:#e9eef3;--menu-card-background-active:#bdcfe2;--text-color:rgb(26, 26, 26);--text-color-light:rgb(57, 57, 57);--text-color-invert:white;--card-background:white;--accordion-button-background:#f5f5f5;--accordion-button-background-invert:#d2dce7;--accordion-button-border-color:#b2becd;--sidebar-item-background:#d2dce7;--tab-link-background:white;--divider-background-color:#d4d4d4;--code-editor-dragger-background-color:#f5f5f5;--code-editor-background-color:#fffffe;--code-editor-language-btn-background-color:#e9eef3;--table-background-color:rgb(240, 240, 240);--table-completed-row-color:rgb(215, 230, 215);--table-highlighted-row-color:#bac0ff;--table-border-color:1px solid hsl(0, 0%, 80%);--tabs-border-color:hsl(0deg, 0%, 86%);--tabs-active-border-color:hsl(0deg, 0%, 21%);--code-block-border-color:lightgray;--code-block1-background-color:#fffffe;--code-error-background:#ffebeb;--code-error-color:#e0221e;--navbar-active-btn-color:#dee8f3;--pro-btn-background:rgb(203, 233, 203);--pro-btn-background-hover:rgb(178, 213, 178);--code-inline-background-color:#f5f5f5;--code-inline-color:#202020;--code-inline-border-color:#d8d8d8;--monaco-btn-color:#f5f5f5;--code-container-background:#f5f5f5;--test-case-btn-background-color:#f1f1f1}.dark-theme{--body-background:#202225;--body-background-2:#13181c;--graph-background:#202225;--navbar-background:#2f3136;--menu-card-background:#202225;--menu-card-background-active:rgb(222, 222, 222);--text-color:#e1e1e1;--text-color-light:#c3c3c3;--text-color-invert:black;--card-background:#2f3136;--accordion-button-background:#2f3136;--accordion-button-background-invert:#13181c;--accordion-button-border-color:hsl(0deg, 0%, 86%);--sidebar-item-background:#202225;--tab-link-background:rgb(222, 222, 222);--divider-background-color:#606060;--code-editor-dragger-background-color:#202225;--code-editor-background-color:#202020;--code-editor-language-btn-background-color:#2f3136;--table-background-color:#2f3136;--table-completed-row-color:#214b52;--table-highlighted-row-color:#454d9e;--table-border-color:1px solid hsl(0, 0%, 37%);--tabs-border-color:hsl(0, 0%, 45%);--tabs-active-border-color:hsl(0deg, 0%, 86%);--code-block-border-color:rgb(99, 99, 99);--code-block1-background-color:#262626;--code-error-background:#ff635f1f;--code-error-color:#ff5b5b;--navbar-active-btn-color:#13181c;--pro-btn-background:#194844;--pro-btn-background-hover:#133d3d;--code-inline-background-color:#363636;--code-inline-color:rgb(220, 217, 217);--code-inline-border-color:#f7faff1f;--monaco-btn-color:#262626;--code-container-background:#202225;--test-case-btn-background-color:#3d3d3d}html{background-color:var(--body-background);height:100%;overflow-y:auto!important}*::-webkit-scrollbar{width:12px}*::-webkit-scrollbar-track{background:var(--code-block1-background-color)}*::-webkit-scrollbar-thumb{background:var(--code-block-border-color)}*::-webkit-scrollbar-thumb:hover{background:#555!important}html,body{transition:background-color .2s linear,color .2s linear}</style><link rel="stylesheet" href="styles.be0312fc3bc32a22.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.be0312fc3bc32a22.css"></noscript></head>
+  <body>
+    <app-root></app-root>
+  <script src="runtime.67f29ef6e9d084b9.js" type="module"></script><script src="polyfills.d008796f8ee66b08.js" type="module"></script><script src="styles.2917cd4beddceb1b.js" defer></script><script src="main.2adb621a7631195b.js" type="module"></script>
+
+</body></html>

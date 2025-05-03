@@ -1,0 +1,34 @@
+# This file contains tests for the solution files to ensure they work as expected.
+
+import unittest
+import os
+import importlib.util
+
+class TestSolutions(unittest.TestCase):
+    def test_solution_files(self):
+        # Define the categories and difficulties to test
+        categories = ['arrays', 'strings']  # Add more categories as needed
+        difficulties = ['easy', 'medium', 'hard']
+
+        for category in categories:
+            for difficulty in difficulties:
+                # Construct the path to the solution directory
+                solution_dir = os.path.join('solutions', category, difficulty)
+                
+                # Check if the directory exists
+                if os.path.exists(solution_dir):
+                    # Iterate through each solution file in the directory
+                    for filename in os.listdir(solution_dir):
+                        if filename.endswith('.py'):
+                            # Import the solution file
+                            file_path = os.path.join(solution_dir, filename)
+                            spec = importlib.util.spec_from_file_location("module.name", file_path)
+                            solution_module = importlib.util.module_from_spec(spec)
+                            spec.loader.exec_module(solution_module)
+
+                            # Here you can add specific tests for each solution
+                            # For example, if the solution has a function named 'solve':
+                            # self.assertEqual(solution_module.solve(input_data), expected_output)
+
+if __name__ == '__main__':
+    unittest.main()

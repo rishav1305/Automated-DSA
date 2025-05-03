@@ -1,0 +1,24 @@
+def validate_solution(solution_function, test_cases):
+    for input_data, expected_output in test_cases:
+        try:
+            assert solution_function(*input_data) == expected_output
+        except AssertionError:
+            print(f"Test failed for input: {input_data}. Expected: {expected_output}, Got: {solution_function(*input_data)}")
+            return False
+    print("All tests passed!")
+    return True
+
+def run_tests(solution_file_path, test_cases):
+    # Dynamically import the solution module
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("solution", solution_file_path)
+    solution_module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(solution_module)
+
+    # Assuming the solution function is named 'solution'
+    solution_function = getattr(solution_module, 'solution', None)
+    if solution_function is None:
+        print("Solution function not found in the provided file.")
+        return False
+
+    return validate_solution(solution_function, test_cases)

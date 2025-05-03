@@ -1,0 +1,14 @@
+def solution_template():
+    """
+    This is a template for solution files. 
+    Replace the function name and logic with your solution.
+    """
+
+    def example_function(param1, param2):
+        # TODO: Implement the solution logic here
+        pass
+
+    if __name__ == "__main__":
+        # Example test case
+        result = example_function(1, 2)
+        print(result)  # Replace with actual test cases and validation logic

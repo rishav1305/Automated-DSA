@@ -1,0 +1,13 @@
+# This is a template for solution files. 
+# Each solution file should follow this structure.
+
+def solution_function_name(parameters):
+    """
+    Implement the solution logic here.
+    """
+    pass  # Replace with actual implementation
+
+if __name__ == "__main__":
+    # Example test case
+    # result = solution_function_name(test_parameters)
+    # print(result)  # Output the result for validation

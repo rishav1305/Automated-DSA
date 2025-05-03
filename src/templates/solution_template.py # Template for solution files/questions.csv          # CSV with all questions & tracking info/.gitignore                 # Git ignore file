@@ -1,0 +1,41 @@
+# Contents of /neetcode-dsa-tracker/neetcode-dsa-tracker/src/templates/solution_template.py
+
+def solution_function(input_data):
+    # Implement the solution logic here
+    pass
+
+if __name__ == "__main__":
+    # Example input for testing
+    input_data = None
+    result = solution_function(input_data)
+    print(result)
+
+# Contents of /neetcode-dsa-tracker/neetcode-dsa-tracker/questions/questions.csv
+
+Header,Difficulty,Status
+"Two Sum","Easy","Not Covered"
+"Longest Substring Without Repeating Characters","Medium","Not Covered"
+"Median of Two Sorted Arrays","Hard","Not Covered"
+"Reverse Integer","Easy","Not Covered"
+"Longest Palindromic Substring","Medium","Not Covered"
+"Zigzag Conversion","Medium","Not Covered"
+"String to Integer (atoi)","Medium","Not Covered"
+"Palindrome Number","Easy","Not Covered"
+"Regular Expression Matching","Hard","Not Covered"
+"Container With Most Water","Medium","Not Covered"
+
+# Contents of /neetcode-dsa-tracker/neetcode-dsa-tracker/.gitignore
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.egg-info/
+*.env
+*.venv
+*.DS_Store
+*.log
+*.csv
+solutions/
