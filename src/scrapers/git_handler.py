@@ -92,7 +92,7 @@ class GitHandler:
                 # Fall back to subprocess
                 return self._run_command(["git", "commit", "-m", message])
     
-    def push_changes(self, remote="origin", branch="main"):
+    def push_changes(self, remote="origin", branch="master"):
         """Pushes committed changes to the remote repository if it exists"""
         if self.repo is None:
             self.ensure_git_initialized()
@@ -111,7 +111,7 @@ class GitHandler:
             # Fall back to subprocess
             return self._run_command(["git", "push", remote, branch])
     
-    def add_commit_push(self, files=None, message=None, remote="origin", branch="main"):
+    def add_commit_push(self, files=None, message=None, remote="origin", branch="master"):
         """Combines add, commit, and push operations"""
         add_result = self.add_files(files)
         if "Error" in str(add_result):
