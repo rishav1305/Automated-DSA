@@ -40,31 +40,31 @@ pip install -r requirements.txt
 ### Fetch Questions from NeetCode
 
 ```bash
-python -m src.main --fetch
+python -m main --fetch
 ```
 
 ### Get a New Question to Solve
 
 ```bash
-python -m src.main --new
+python -m main --new
 ```
 
 Optionally filter by category or difficulty:
 
 ```bash
-python -m src.main --new --category "Arrays & Hashing" --difficulty Easy
+python -m main --new --category "Arrays & Hashing" --difficulty Easy
 ```
 
 ### Test a Solution
 
 ```bash
-python -m src.main --test path/to/solution.py
+python -m main --test path/to/solution.py
 ```
 
 ### Commit and Push Changes to Git
 
 ```bash
-python -m src.main --commit
+python -m main --commit
 ```
 
 ## Workflow

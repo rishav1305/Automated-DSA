@@ -8,20 +8,24 @@ import re
 import requests
 import importlib
 
-# Add parent directory to path to import modules
-script_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(script_dir, ".."))
+# Ensure correct paths - use absolute path to the current script's directory
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+project_root = script_dir  # Set project_root to the current directory
+
+# Add project_root to system path
 sys.path.append(project_root)
 
-from scrapers.neetcode_scraper import fetch_neetcode_questions
-from scrapers.csv_handler import CSVHandler
-from scrapers.git_handler import GitHandler
-from utils.solution_tester import SolutionTester
+# Import modules from correct paths
+from src.scrapers.neetcode_scraper import fetch_neetcode_questions
+from src.scrapers.csv_handler import CSVHandler
+from src.scrapers.git_handler import GitHandler
+from src.utils.solution_tester import SolutionTester
 
 # Constants
 CSV_PATH = os.path.join(project_root, "questions.csv")
 SOLUTIONS_DIR = os.path.join(project_root, "questions")
-TEMPLATE_PATH = os.path.join(script_dir, "templates", "solution_template.py")
+TEMPLATE_PATH = os.path.join(project_root, "src", "templates", "solution_template.py")
 
 
 def sanitize_filename(filename):
