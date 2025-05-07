@@ -57,6 +57,9 @@ Examples:
 """
 
 from collections import defaultdict
+import os
+import csv
+from datetime import datetime
 
 class Solution:
     def group_anagrams(self, strs):
@@ -120,6 +123,40 @@ class Solution:
             (["", "", "a", "b"], [["", ""], ["a"], ["b"]])
         ]
 
+def update_csv_status(problem_id, status=True):
+    """
+    Update the status of a problem in the questions.csv file.
+    
+    Args:
+        problem_id (str): The ID of the problem to update.
+        status (bool): Whether the problem is completed or not.
+    """
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+    csv_path = os.path.join(project_root, 'questions.csv')
+    
+    # Read the CSV file
+    rows = []
+    with open(csv_path, 'r') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            rows.append(row)
+    
+    # Update the status of the problem
+    for row in rows:
+        if row['id'] == problem_id:
+            row['completed'] = str(status)
+            if status:
+                row['date_completed'] = datetime.now().strftime('%Y-%m-%d')
+    
+    # Write back to the CSV file
+    with open(csv_path, 'w', newline='') as csvfile:
+        fieldnames = rows[0].keys()
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+    
+    print(f"Updated status of '{problem_id}' to {'completed' if status else 'incomplete'}")
+
 # For testing
 if __name__ == "__main__":
     sol = Solution()
@@ -151,3 +188,7 @@ if __name__ == "__main__":
                 print(f"  Actual: {actual}")
         
         print(f"\nPassed {passed}/{total} tests")
+        
+        # Update CSV if all test cases pass
+        if passed == total:
+            update_csv_status("group-anagrams", True)

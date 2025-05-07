@@ -2,8 +2,8 @@ id,title,url,difficulty,category,solution_url,completed,date_completed
 contains-duplicate,Contains Duplicate,https://leetcode.com/problems/contains-duplicate/,Easy,Arrays & Hashing,https://neetcode.io/solutions/contains-duplicate,True,2025-05-04
 valid-anagram,Valid Anagram,https://leetcode.com/problems/valid-anagram/,Easy,Arrays & Hashing,https://neetcode.io/solutions/valid-anagram,True,2025-05-05
 two-sum,Two Sum,https://leetcode.com/problems/two-sum/,Easy,Arrays & Hashing,https://neetcode.io/solutions/two-sum,True,2025-05-04
-group-anagrams,Group Anagrams,https://leetcode.com/problems/group-anagrams/,Medium,Arrays & Hashing,https://neetcode.io/solutions/group-anagrams,False,
-top-k-frequent-elements,Top K Frequent Elements,https://leetcode.com/problems/top-k-frequent-elements/,Medium,Arrays & Hashing,https://neetcode.io/solutions/top-k-frequent-elements,False,
+group-anagrams,Group Anagrams,https://leetcode.com/problems/group-anagrams/,Medium,Arrays & Hashing,https://neetcode.io/solutions/group-anagrams,True,2025-05-07
+top-k-frequent-elements,Top K Frequent Elements,https://leetcode.com/problems/top-k-frequent-elements/,Medium,Arrays & Hashing,https://neetcode.io/solutions/top-k-frequent-elements,True,2025-05-07
 product-of-array-except-self,Product of Array Except Self,https://leetcode.com/problems/product-of-array-except-self/,Medium,Arrays & Hashing,https://neetcode.io/solutions/product-of-array-except-self,False,
 valid-sudoku,Valid Sudoku,https://leetcode.com/problems/valid-sudoku/,Medium,Arrays & Hashing,https://neetcode.io/solutions/valid-sudoku,False,
 encode-and-decode-strings,Encode and Decode Strings,https://leetcode.com/problems/encode-and-decode-strings/,Medium,Arrays & Hashing,https://neetcode.io/solutions/encode-and-decode-strings,False,
