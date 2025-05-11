@@ -5,7 +5,7 @@ two-sum,Two Sum,https://leetcode.com/problems/two-sum/,Easy,Arrays & Hashing,htt
 group-anagrams,Group Anagrams,https://leetcode.com/problems/group-anagrams/,Medium,Arrays & Hashing,https://neetcode.io/solutions/group-anagrams,True,2025-05-07
 top-k-frequent-elements,Top K Frequent Elements,https://leetcode.com/problems/top-k-frequent-elements/,Medium,Arrays & Hashing,https://neetcode.io/solutions/top-k-frequent-elements,True,2025-05-07
 product-of-array-except-self,Product of Array Except Self,https://leetcode.com/problems/product-of-array-except-self/,Medium,Arrays & Hashing,https://neetcode.io/solutions/product-of-array-except-self,True,2025-05-10
-valid-sudoku,Valid Sudoku,https://leetcode.com/problems/valid-sudoku/,Medium,Arrays & Hashing,https://neetcode.io/solutions/valid-sudoku,False,
+valid-sudoku,Valid Sudoku,https://leetcode.com/problems/valid-sudoku/,Medium,Arrays & Hashing,https://neetcode.io/solutions/valid-sudoku,True,2025-05-11
 encode-and-decode-strings,Encode and Decode Strings,https://leetcode.com/problems/encode-and-decode-strings/,Medium,Arrays & Hashing,https://neetcode.io/solutions/encode-and-decode-strings,False,
 longest-consecutive-sequence,Longest Consecutive Sequence,https://leetcode.com/problems/longest-consecutive-sequence/,Medium,Arrays & Hashing,https://neetcode.io/solutions/longest-consecutive-sequence,False,
 valid-palindrome,Valid Palindrome,https://leetcode.com/problems/valid-palindrome/,Easy,Two Pointers,https://neetcode.io/solutions/valid-palindrome,False,
